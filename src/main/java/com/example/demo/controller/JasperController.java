@@ -540,7 +540,7 @@ public class JasperController {
 	            JasperCompileManager.compileReportToFile(archivo.getAbsolutePath(), rutaJasper);
 	            System.out.println("✅ Compilado y guardado: " + rutaJasper);
 	        } catch (JRException e) {
-	            System.err.println("❌ Error compilando " + archivo.getName() + ": " + e.getMessage());
+	            System.err.println("Error compilando " + archivo.getName() + ": " + e.getMessage());
 	        }
 	    }
 	}
